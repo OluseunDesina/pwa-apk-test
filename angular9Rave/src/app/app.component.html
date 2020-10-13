@@ -1,0 +1,16 @@
+<input type="number" #amount class="amount" placeholder="Enter Amount" />
+<!-- <flutterwave-make-payment
+[public_key]="publicKey"
+[attr.amount]="this.amount"
+currency='NGN'
+payment_options="card,ussd"
+redirect_url=""
+text="Pay Now"
+[customer]="customerDetails"
+[customizations]="customizations"
+[meta]="meta"
+[tx_ref]="generateReference()"
+(callback)="makePaymentCallback($event)"
+(close)="closedPaymentModal()" >
+</flutterwave-make-payment> -->
+<button (click)="payViaPromise(amount.value)" class="btn">Pay</button>
